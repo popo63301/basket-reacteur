@@ -17,6 +17,7 @@ class MenuListItem extends Component {
           fontFamily: 'Roboto',
           justifyContent: 'space-between'
         }}
+        onClick={() => this.props.incrementChoice(this.props.id)}
       >
         <div>{this.props.title}</div>
         <div>{this.props.price} €</div>
